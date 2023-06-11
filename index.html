@@ -12,7 +12,7 @@
 				font-family: 'Source Code Pro', monospace;
 				font-weight: 400;
 				background-color:floralwhite;
-				line-height: 30px;
+				line-height: 25px;
 			}
 
 			body {
@@ -21,8 +21,43 @@
 				margin-right: 20%;
 			}
 
+			h1 {
+				margin-top: 40px;
+				display: block;
+			}
+
+			#top-div {
+				display: flex;
+  				/* justify-content: center; */
+			}
+
+			#top-pic, #top-text {
+				display: inline-block;
+			}
+
 			.eric {
 				color:peru;
+			}
+
+			#headline {
+				background-color: rgb(255, 237, 220);
+				display: inline-block;
+				padding: 15px;
+				border-radius: 10px;
+			}
+			
+			#profile-pic {
+				width: 150px;
+				height: 150px;
+				border-radius: 50px;
+				margin: 50px;
+				display: inline-block;
+				border: 3px solid chocolate;
+			}
+			
+			#about-me p {
+				/* margin: 10px; */
+				/* padding: 10x; */
 			}
 			
 			.it {
@@ -46,16 +81,23 @@
 				</style>
 	</head>
 	<body>
-		<h1>Hey there, I'm <span class="eric">Eric</span>.</h1>
-		<p>I'm an <span class="it">IT Student</span> and a <span class="music">Music Creator</span> based in Switzerland.</p>
+		<div id="top-div">
+			<div id="top-text">
+				<h1>Hey there, I'm <span class="eric">Eric</span>.</h1>
+				<p id="headline">I'm an <span class="it">IT Student</span> and a <span class="music">Music Creator</span> based in Switzerland.</p>
+			</div>
+			<div id="top-pic">
+				<!-- <img id="profile-pic" src="profile.jpg"> -->
+			</div>
+		</div>
 		<h3>About me</h3>
-		<p>
-			My name is <span class="eric">Eric Holzer</span>, I'm 20 and I'm half Swiss and half Japanese.<br>
-			I'm a freshman <span class="it">IT Student</span> at <span class="it"><a href="https://42.fr/en/homepage/" target="_blank" style="text-decoration: none;">Ecole 42</a></span>, where I mainly learn <span class="technology">C</span> and (soon) <span class="technology">C++</span>.<br>
-			I've recently got passioned about learning <span class="it">Web Development</span>, using <span class="technology">HTML</span>, <span class="technology">CSS</span>, <span class="technology">JavaScript</span> (and Wordpress).<br>
-			I've always loved making <span class="it"><a href="https://erzloh.itch.io/" target="_blank" style="text-decoration: none;">games</a></span>, and I'm now an intern in a <span class="it">game studio</span>, using <span class="technology">Unreal Engine 5</span>.<br>
-			I'm also a <span class="music">Music Composer</span> and <span class="music">audio nerd</span>, I make music for projects such as games, animations, my own albums, etc...<br>
-		</p>
+		<div id="about-me">
+			<p>My name is <span class="eric">Eric Holzer</span> (aka <span class="eric">erzloh</span>), I'm 20 and I'm half Swiss and half Japanese.<br></p>
+			<p>I'm a freshman <span class="it">IT Student</span> at <span class="it"><a href="https://42.fr/en/homepage/" target="_blank" style="text-decoration: none; color: inherit">Ecole 42</a></span>, where I mainly learn <span class="technology">C</span> and (soon) <span class="technology">C++</span>.<br></p>
+			<p>I've recently got passioned about learning <span class="it">Web Development</span>, using <span class="technology">HTML</span>, <span class="technology">CSS</span>, <span class="technology">JavaScript</span> (and Wordpress).<br></p>
+			<p>I've always loved making <span class="it"><a href="https://erzloh.itch.io/" target="_blank" style="text-decoration: none; color: inherit">games</a></span>, and I'm now an intern in a <span class="it">game studio</span>, using <span class="technology">Unreal Engine 5</span>.<br></p>
+			<p>I'm also a <span class="music">Music Composer</span> and <span class="music">audio nerd</span>, I make music for projects such as games, animations, or my own lo-fi albums.<br></p>
+		</div>
 		<h3>Bio</h3>
 		<ul>
 			<li>2002: Born in Lausanne, Switzerland</li>
