@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Eric Holzer's Website</title>
+		<title>Eric Holzer</title>
 		<link rel="icon" type="image/png" href="pacman_logo_transparent.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<style>
+			html {
+				/* font-family: 'Roboto Mono', monospace; */
+				font-family: 'Source Code Pro', monospace;
+				font-weight: 400;
+				background-color:floralwhite;
+				line-height: 30px;
+			}
+
+			body {
+				/* text-align: center; */
+				margin-left: 20%;
+				margin-right: 20%;
+			}
+
 			.eric {
 				color:peru;
 			}
@@ -19,7 +36,14 @@
 			.technology {
 				color:brown;
 			}
-		</style>
+
+			footer {
+				text-align: center;
+				padding: 10px;
+				color: #777;
+				font-size: 14px;
+			}
+				</style>
 	</head>
 	<body>
 		<h1>Hey there, I'm <span class="eric">Eric</span>.</h1>
@@ -27,9 +51,9 @@
 		<h3>About me</h3>
 		<p>
 			My name is <span class="eric">Eric Holzer</span>, I'm 20 and I'm half Swiss and half Japanese.<br>
-			I'm a freshman <span class="it">IT Student</span> at <span class="it">Ecole 42</span>, where I mainly learn <span class="technology">C</span> and <span class="technology">C++</span>.<br>
+			I'm a freshman <span class="it">IT Student</span> at <span class="it"><a href="https://42.fr/en/homepage/" target="_blank" style="text-decoration: none;">Ecole 42</a></span>, where I mainly learn <span class="technology">C</span> and (soon) <span class="technology">C++</span>.<br>
 			I've recently got passioned about learning <span class="it">Web Development</span>, using <span class="technology">HTML</span>, <span class="technology">CSS</span>, <span class="technology">JavaScript</span> (and Wordpress).<br>
-			I've always loved making <span class="it">games</span>, and I'm now an intern in a <span class="it">game studio</span>, using <span class="technology">Unreal Engine 5</span>.<br>
+			I've always loved making <span class="it"><a href="https://erzloh.itch.io/" target="_blank" style="text-decoration: none;">games</a></span>, and I'm now an intern in a <span class="it">game studio</span>, using <span class="technology">Unreal Engine 5</span>.<br>
 			I'm also a <span class="music">Music Composer</span> and <span class="music">audio nerd</span>, I make music for projects such as games, animations, my own albums, etc...<br>
 		</p>
 		<h3>Bio</h3>
@@ -52,5 +76,8 @@
 			<li><a href="https://soundcloud.com/user-806531614" target="_blank">My SoundCloud</a></li>
 			<li><a href="https://erzloh.itch.io/" target="_blank">My itch.io</a></li>
 		</ul>
+		<footer>
+      		&copy; 2023 Eric Holzer. All Rights Reserved.
+    	</footer>
 	</body>
 </html>
