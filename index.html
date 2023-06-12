@@ -37,6 +37,12 @@
 
 			.eric {
 				color:peru;
+				display: inline-block;
+				transition: transform 0.3s;
+			}
+
+			.eric:hover {
+				transform: scale(1.07) rotate(-3deg);
 			}
 
 			#headline {
@@ -44,6 +50,12 @@
 				display: inline-block;
 				padding: 15px;
 				border-radius: 10px;
+				transition: 0.3s;
+			}
+
+			#headline:hover {
+				background-color: rgb(252, 212, 175);
+				transform: scale(1.05);
 			}
 			
 			#profile-pic {
@@ -53,11 +65,6 @@
 				margin: 50px;
 				display: inline-block;
 				border: 3px solid chocolate;
-			}
-			
-			#about-me p {
-				/* margin: 10px; */
-				/* padding: 10x; */
 			}
 			
 			.it {
@@ -92,7 +99,7 @@
 		</div>
 		<h3>About me</h3>
 		<div id="about-me">
-			<p>My name is <span class="eric">Eric Holzer</span> (aka <span class="eric">erzloh</span>), I'm 20 and I'm half Swiss and half Japanese.<br></p>
+			<p>My name is <span class="eric">Eric Holzer</span> (aka <span class="eric">erzloh</span>), I'm 20 and I'm Swiss-Japanese.<br></p>
 			<p>I'm a freshman <span class="it">IT Student</span> at <span class="it"><a href="https://42.fr/en/homepage/" target="_blank" style="text-decoration: none; color: inherit">Ecole 42</a></span>, where I mainly learn <span class="technology">C</span> and (soon) <span class="technology">C++</span>.<br></p>
 			<p>I've recently got passioned about learning <span class="it">Web Development</span>, using <span class="technology">HTML</span>, <span class="technology">CSS</span>, <span class="technology">JavaScript</span> (and Wordpress).<br></p>
 			<p>I've always loved making <span class="it"><a href="https://erzloh.itch.io/" target="_blank" style="text-decoration: none; color: inherit">games</a></span>, and I'm now an intern in a <span class="it">game studio</span>, using <span class="technology">Unreal Engine 5</span>.<br></p>
