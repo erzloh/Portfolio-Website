@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Eric Holzer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="pacman_logo_transparent.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,6 +96,31 @@
 				text-align: center;
 			}
 
+			/* .year {
+				font-weight: bold;
+				margin-right: 1em;
+			} */
+
+			#bio {
+    			/* list-style: none; */
+				padding-left: 0;
+			}
+			
+
+			#bio li {
+				margin-bottom: 16px;
+				display: flex;
+				/* align-items: baseline; */
+			}
+
+			.year {
+				/* width: 40px; */
+				/* text-align: right; */
+				margin-right: 16px; /* 年とテキストの間に8pxのマージンを追加 */
+				font-weight: bold;
+				color:#626262;
+			}
+
 			@media (max-width: 576px) {
 				body {
 					margin-left: 5%;
@@ -122,11 +148,11 @@
 			<p>I'm also a <span class="music">Music Composer</span> and <span class="music">audio nerd</span>, I make music for projects such as games, animations, or my own lo-fi albums.<br></p>
 		</div>
 		<h3>Bio</h3>
-		<ul>
-			<li>2002: Born in Lausanne, Switzerland</li>
-			<li>2021: Started a Sound Arts PreCollege year at the University of the Arts Bern</li>
-			<li>2022: Started my studies at Ecole 42, in Lausanne</li>
-			<li>2023: Started a 20% internship at NaravenGames, as an Unreal Engine developer</li>
+		<ul id="bio">
+			<li><span class="year">2002</span>Born in Lausanne, Switzerland</li>
+			<li><span class="year">2021</span>Started a Sound Arts PreCollege year at the University of the Arts Bern</li>
+			<li><span class="year">2022</span>Started my studies at Ecole 42, in Lausanne</li>
+			<li><span class="year">2023</span>Started a 20% internship at NaravenGames, as an Unreal Engine developer</li>
 		</ul>
 		<h3>Things I ♡</h3>
 		<p>Programming, Making Music, Calisthenics, Learning Japanese, Cooking, Playing Piano, Design</p>
