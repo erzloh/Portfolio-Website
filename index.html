@@ -6,6 +6,7 @@
 		<link rel="icon" type="image/png" href="pacman_logo_transparent.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<style>
 			html {
@@ -31,6 +32,7 @@
 			#top-div {
 				display: flex;
   				justify-content: center;
+				margin-top: 64px;
 			}
 
 			/* #top-pic, #top-text {
@@ -121,6 +123,41 @@
 				color:#626262;
 			}
 
+			.navbar {
+				background-color: peru;
+				background-color: rgba(205, 133, 63, 0.5);
+				color: #fff; /* テキストカラー */
+				position: fixed;
+				width: 100vw;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				backdrop-filter: blur(10px);
+    			-webkit-backdrop-filter: blur(10px);
+				/* padding: 5px; */
+			}
+
+			.nav-list {
+				list-style: none; /* リストのスタイルを削除 */
+				padding: 0;
+				margin-left: 20%;
+			}
+
+			.nav-list li {
+				display: inline; /* リストアイテムを水平に配置 */
+				margin-right: 20px; /* リストアイテムの右側にマージンを追加 */
+			}
+
+			.nav-list li a {
+				text-decoration: none; /* リンクの下線を削除 */
+				color: #fff; /* リンクのテキストカラー */
+			}
+
+			.links {
+				list-style: none;
+				padding-left: 0;
+			}
+
 			@media (max-width: 576px) {
 				body {
 					margin-left: 5%;
@@ -130,6 +167,14 @@
 		</style>
 	</head>
 	<body>
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 		<div id="top-div">
 			<div id="top-text">
 				<h1>Hey there, I'm <span class="eric">Eric</span>.</h1>
@@ -157,16 +202,19 @@
 		<h3>Things I ♡</h3>
 		<p>Programming, Making Music, Calisthenics, Learning Japanese, Cooking, Playing Piano, Design</p>
 		<h3>Links</h3>
-		<ul>
-			<li><a href="https://github.com/erzloh" target="_blank">My GitHub</a></li>
-			<li><a href="https://www.linkedin.com/in/eric-holzer-3090551b8/" target="_blank">My LinkedIn</a></li>
-			<li><a href="https://twitter.com/erzloh" target="_blank">My Twitter</a></li>
-			<li><a href="https://www.instagram.com/eric.hzer/" target="_blank">My Instagram</a></li>
-			<li><a href="https://www.youtube.com/erzloh" target="_blank">My YouTube</a></li>
-			<li><a href="https://open.spotify.com/artist/3XCzWWzTXpwD677Us6YinR" target="_blank">My Spotify</a></li>
-			<li><a href="https://soundcloud.com/user-806531614" target="_blank">My SoundCloud</a></li>
-			<li><a href="https://erzloh.itch.io/" target="_blank">My itch.io</a></li>
-		</ul>
+		<ul class="links">
+			<li><i class="fab fa-github"></i> <a href="https://github.com/erzloh" target="_blank">My GitHub</a></li>
+			<li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/eric-holzer-3090551b8/" target="_blank">My LinkedIn</a></li>
+			<li><i class="fab fa-twitter"></i> <a href="https://twitter.com/erzloh" target="_blank">My Twitter</a></li>
+			<li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/eric.hzer/" target="_blank">My Instagram</a></li>
+			<li><i class="fab fa-youtube"></i> <a href="https://www.youtube.com/erzloh" target="_blank">My YouTube</a></li>
+			<li><i class="fab fa-spotify"></i> <a href="https://open.spotify.com/artist/3XCzWWzTXpwD677Us6YinR" target="_blank">My Spotify</a></li>
+			<li><i class="fab fa-soundcloud"></i> <a href="https://soundcloud.com/user-806531614" target="_blank">My SoundCloud</a></li>
+			<li><i class="fas fa-gamepad"></i> <a href="https://erzloh.itch.io/" target="_blank">My itch.io</a></li>
+		</ul>		
+		<hr>
+		<h3>Some of my own lo-fi music ♫</h3>
+		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1kMYqto9FqKW5398dsM5sB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 		<footer>
       		&copy; 2023 Eric Holzer. All Rights Reserved.
     	</footer>
