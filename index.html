@@ -3,195 +3,13 @@
 	<head>
 		<title>Eric Holzer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="pacman_logo_transparent.png">
+		<link rel="icon" type="image/png" href="images/pacman_logo_transparent.png">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<style>
-			html {
-				/* font-family: 'Roboto Mono', monospace; */
-				font-family: 'Source Code Pro', monospace;
-				font-weight: 400;
-				background-color:floralwhite;
-				line-height: 25px;
-			}
-
-			body {
-				/* text-align: center; */
-				margin-left: 20%;
-				margin-right: 20%;
-			}
-
-			h1 {
-				margin-top: 40px;
-				display: block;
-				text-align: center;
-			}
-
-			#top-div {
-				display: flex;
-  				justify-content: center;
-				/* margin-top: 64px; */
-			}
-
-			/* #top-pic, #top-text {
-				display: inline-block;
-			} */
-
-			#top-text {
-				display: flex;
-				justify-content: center;
-				flex-direction: column;
-			}
-
-			.eric {
-				color:peru;
-				display: inline-block;
-				/* transition: transform 0.3s; */
-				transition: 0.3s;
-			}
-
-			.eric:hover {
-				transform: scale(1.07) rotate(-3deg);
-			}
-
-			#headline {
-				background-color: rgb(255, 237, 220);
-				display: inline-block;
-				padding: 15px;
-				border-radius: 10px;
-				transition: 0.3s;
-
-			}
-
-			#headline:hover {
-				background-color: rgb(252, 212, 175);
-				transform: scale(1.05);
-			}
-			
-			#profile-pic {
-				width: 150px;
-				height: 150px;
-				border-radius: 50px;
-				margin: 50px;
-				display: inline-block;
-				border: 3px solid chocolate;
-			}
-			
-			.it {
-				color:darkcyan;
-			}
-
-			.music {
-				color:blueviolet;
-			}
-
-			.technology {
-				color:brown;
-			}
-
-			footer {
-				padding: 10px;
-				color: #777;
-				font-size: 14px;
-				text-align: center;
-			}
-
-			/* .year {
-				font-weight: bold;
-				margin-right: 1em;
-			} */
-
-			#bio {
-    			/* list-style: none; */
-				padding-left: 0;
-			}
-			
-
-			#bio li {
-				margin-bottom: 16px;
-				display: flex;
-				/* align-items: baseline; */
-			}
-
-			.year {
-				/* width: 40px; */
-				/* text-align: right; */
-				margin-right: 16px; /* 年とテキストの間に8pxのマージンを追加 */
-				font-weight: bold;
-				color:#626262;
-			}
-
-			.navbar {
-				background-color: peru;
-				background-color: rgba(205, 133, 63, 0.4);
-				color: #fff; /* テキストカラー */
-				position: fixed;
-				width: 100vw;
-				top: 0;
-				left: 0;
-				z-index: 1;
-				backdrop-filter: blur(10px);
-    			-webkit-backdrop-filter: blur(10px);
-				/* padding: 5px; */
-				display: none;
-			}
-
-			.nav-list {
-				list-style: none; /* リストのスタイルを削除 */
-				padding: 0;
-				margin-left: 20%;
-			}
-
-			.nav-list li {
-				display: inline; /* リストアイテムを水平に配置 */
-				margin-right: 20px; /* リストアイテムの右側にマージンを追加 */
-			}
-
-			.nav-list li a {
-				text-decoration: none; /* リンクの下線を削除 */
-				color: #fff; /* リンクのテキストカラー */
-			}
-
-			.links {
-				list-style: none;
-				padding-left: 0;
-			}
-
-			@media (max-width: 576px) {
-				body {
-					margin-left: 5%;
-					margin-right: 5%;
-				}
-			}
-
-			@media (max-width: 768px) {
-				.navbar {
-					position: static; /* 固定位置を解除し、通常の配置に戻す */
-					background-color: #333; /* モバイルデバイス用の背景色 */
-				}
-
-				.nav-list {
-					display: none; /* メニューリストをデフォルトで非表示にする */
-					flex-direction: column; /* モバイルデバイス用に縦に配置 */
-					background-color: #333;
-					position: absolute;
-					top: 50px;
-					left: 0;
-					width: 100%;
-				}
-
-				.nav-list.active {
-					display: flex; /* アクティブなメニューリストを表示する */
-				}
-
-				.nav-list li {
-					display: block;
-					margin: 10px 0; /* メニューアイテムのマージンを追加 */
-				}
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="main.js" defer></script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -201,6 +19,7 @@
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
 		</nav>
 		<div id="top-div">
 			<div id="top-text">

@@ -1,0 +1,239 @@
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
+html {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 400;
+	background-color:floralwhite;
+	line-height: 25px;
+}
+
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+h1 {
+	margin-top: 90px;
+	display: block;
+	text-align: center;
+}
+
+#top-div {
+	display: flex;
+	justify-content: center;
+}
+
+/* #top-pic, #top-text {
+	display: inline-block;
+} */
+
+#top-text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.eric {
+	color:peru;
+	display: inline-block;
+	transition: 0.3s;
+}
+
+.eric:hover {
+	transform: scale(1.07) rotate(-3deg);
+}
+
+#headline {
+	background-color: rgb(255, 237, 220);
+	display: inline-block;
+	padding: 15px;
+	border-radius: 10px;
+	transition: 0.3s;
+
+}
+
+#headline:hover {
+	background-color: rgb(252, 212, 175);
+	transform: scale(1.05);
+}
+
+#profile-pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 50px;
+	margin: 50px;
+	display: inline-block;
+	border: 3px solid chocolate;
+}
+
+.it {
+	color:darkcyan;
+}
+
+.music {
+	color:blueviolet;
+}
+
+.technology {
+	color:brown;
+}
+
+footer {
+	padding: 10px;
+	color: #777;
+	font-size: 14px;
+	text-align: center;
+}
+
+#bio {
+	padding-left: 0;
+}
+
+
+#bio li {
+	margin-bottom: 16px;
+	display: flex;
+}
+
+.year {
+	margin-right: 16px; /* 年とテキストの間に8pxのマージンを追加 */
+	font-weight: bold;
+	color:#626262;
+}
+
+a {
+    color: inherit; /* This makes the link inherit the color of its parent element */
+    text-decoration: none; /* This removes the underline */
+}
+
+/* Remove color for hover state */
+a:hover {
+    color: inherit;
+	text-decoration: underline;
+}
+
+/* Remove color for visited state */
+a:visited {
+    color: inherit;
+}
+
+.navbar {
+	background-color: rgb(223, 188, 153);
+	color: #fff;
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	/* backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px); */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list {
+	padding: 0;
+	margin-left: 20%;
+}
+
+.nav-list li {
+	display: inline; /* リストアイテムを水平に配置 */
+	margin-right: 20px; /* リストアイテムの右側にマージンを追加 */
+}
+
+.nav-list li a {
+	text-decoration: none; /* リンクの下線を削除 */
+	color: #fff; /* リンクのテキストカラー */
+}
+
+.navbar .burger-menu {
+	position: absolute;
+	width: 40px;
+	top: 0px;
+	right: 0px;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	display: none;
+	transition: 0.5s;
+}
+
+.burger-menu:hover {
+	rotate: 180deg;
+}
+
+.links {
+	list-style: none;
+	padding-left: 0;
+}
+
+@media (max-width: 576px) {
+	body {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+	.navbar .burger-menu {
+		display: block;
+	}
+
+	.nav-list li {
+	margin-right: 0px;
+	margin-top: 25px;
+	font-size: 1.2em;
+	}
+	
+	/* .navbar.mobile-menu {
+		backdrop-filter: none;
+		-webkit-backdrop-filter: none;
+	} */
+
+	.nav-list {
+		margin: 0;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: rgba(205, 134, 63, 0.487);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		margin-left: 100%;
+		transition: all 0.5s ease;
+	}
+
+	.nav-list.mobile-menu {
+		margin-left: 0;
+	}
+}
+
+/* .nav-list {
+	display: none;
+	flex-direction: column;
+	background-color: #333;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+}
+
+.nav-list.active {
+	display: flex;
+}
+
+.nav-list li {
+	display: block;
+	margin: 10px 0;
+} */
