@@ -279,3 +279,19 @@ hr {
 .audio-container p {
 	font-style: italic;
 }
+
+.credit {
+	font-size: 0.8em;
+	color: #777;
+	margin-top: 0;
+	text-align: center;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+  }
+  
+.italic {
+	font-style: italic;
+}
