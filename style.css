@@ -26,6 +26,10 @@ h1 {
 	justify-content: center;
 }
 
+ul {
+	padding-left: 0;
+}
+
 /* #top-pic, #top-text {
 	display: inline-block;
 } */
@@ -232,6 +236,17 @@ a:visited {
 	}
 }
 
+/* media query from 1400px width and larger, body margin is 30% */
+@media (min-width: 1400px) {
+	body {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
+	.nav-list {
+		margin-left: 30%;
+	}
+}
+
 /* .nav-list {
 	display: none;
 	flex-direction: column;
@@ -295,3 +310,7 @@ video {
 .italic {
 	font-style: italic;
 }
+
+h2, h3, h4, h5, h6 {
+	scroll-margin-top: 60px;
+  }
