@@ -247,25 +247,6 @@ a:visited {
 	}
 }
 
-/* .nav-list {
-	display: none;
-	flex-direction: column;
-	background-color: #333;
-	position: absolute;
-	top: 50px;
-	left: 0;
-	width: 100%;
-}
-
-.nav-list.active {
-	display: flex;
-}
-
-.nav-list li {
-	display: block;
-	margin: 10px 0;
-} */
-
 h3 img {
 	margin-top: -5px;
 	margin-left: 8px;
