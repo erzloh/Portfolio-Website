@@ -53,6 +53,7 @@ ul {
 #headline {
 	background-color: rgb(255, 237, 220);
 	display: inline-block;
+	text-align: center;
 	padding: 15px;
 	border-radius: 10px;
 	transition: 0.3s;
@@ -153,11 +154,11 @@ a:visited {
 .nav-list li a {
 	text-decoration: none; /* リンクの下線を削除 */
 	color: #fff; /* リンクのテキストカラー */
-	transition: 0.3s;;
+	transition: 0.2s;;
 }
 
 .nav-list li a:hover {
-	color: peru;
+	color: rgb(112, 75, 38);
 }
 
 .navbar .burger-menu {
@@ -300,3 +301,6 @@ h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 }
 
+.nav-list li .current-page {
+    color: rgb(112, 75, 38);
+}
