@@ -304,3 +304,8 @@ h2, h3, h4, h5, h6 {
 .nav-list li .current-page {
     color: rgb(112, 75, 38);
 }
+
+.insta {
+	display: flex;
+	justify-content: center;
+}
