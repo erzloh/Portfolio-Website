@@ -309,3 +309,23 @@ h2, h3, h4, h5, h6 {
 	display: flex;
 	justify-content: center;
 }
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+#top-div, #core-content {
+	animation: fadein 1s ease-in-out;
+}
+
+.genre-div {
+	display: none;
+	animation: fadein 1s;
+}
+
+.genre:hover {
+	/* underline */
+	text-decoration: underline;
+	cursor: pointer;
+}

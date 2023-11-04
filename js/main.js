@@ -15,3 +15,61 @@ menuHamburger.addEventListener('click', () => {
 		document.body.style.overflow = "auto";
 	}
 });
+
+// const vgm = document.querySelector("#vgm");
+// const vgmDiv = document.querySelector("#vgm-div");
+// let vgmOpen = false;
+
+// vgm.addEventListener('click', () => {
+// 	if (vgmOpen) {
+// 		vgmDiv.style.display = "none";
+// 		vgm.innerHTML = "→ Video Game Music";
+// 		vgmOpen = false;
+// 	}
+// 	else {
+// 		vgmDiv.style.display = "block";
+// 		vgm.innerHTML = "↓ Video Game Music";
+// 		vgmOpen = true;
+// 	}
+// });
+
+/* <li><a href="#vgm">Video Game Music</a></li>
+<li><a href="#animations">Music for Animations</a></li>
+<li><a href="#lofi">Lo-fi - beats to study/relax to</a></li>
+<li><a href="#ambient">Ambient Music</a></li>
+<li><a href="#piano">Piano Works</a></li>
+<li><a href="#electronic">Electronic Music</a></li>
+<li><a href="#experimental">Experimental Music</a></li>
+<li><a href="#trap">Trap Beats</a></li>
+<li><a href="#short-films">Music for Short Films</a></li>
+<li><a href="#jazz">Jazz Fusion</a></li> */
+
+function OpenableDiv(titleTag) {
+	this.title = document.getElementById(titleTag);
+	this.div = document.getElementById(titleTag + "-div");
+	this.open = false;
+	
+	this.title.addEventListener('click', () => {
+		if (this.open) {
+			this.div.style.display = "none";
+			this.title.innerHTML = "→ " + this.title.innerHTML.substring(2);
+			this.open = false;
+		}
+		else {
+			this.div.style.display = "block";
+			this.title.innerHTML = "↓ " + this.title.innerHTML.substring(2);
+			this.open = true;
+		}
+	});
+}
+
+const vgm = new OpenableDiv("vgm");
+const animations = new OpenableDiv("animations");
+const lofi = new OpenableDiv("lofi");
+const ambient = new OpenableDiv("ambient");
+const piano = new OpenableDiv("piano");
+const electronic = new OpenableDiv("electronic");
+const experimental = new OpenableDiv("experimental");
+const trap = new OpenableDiv("trap");
+const shortFilms = new OpenableDiv("short-films");
+const jazz = new OpenableDiv("jazz");
