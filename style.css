@@ -311,8 +311,8 @@ h2, h3, h4, h5, h6 {
 }
 
 @keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
+	from { opacity: 0; transform: translateY(-20px); }
+	to   { opacity: 1; transform: translateY(0px); }
 }
 
 #top-div, #core-content {
@@ -326,6 +326,25 @@ h2, h3, h4, h5, h6 {
 
 .genre:hover {
 	/* underline */
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.project-screenshot {
+	width: 100%;
+	height: auto;
+}
+
+.project-div a {
+	text-decoration: underline;
+}
+
+.project-div {
+	display: none;
+	animation: fadein 1s ease;
+}
+
+.project-name:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }

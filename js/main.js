@@ -63,13 +63,27 @@ function OpenableDiv(titleTag) {
 	});
 }
 
-const vgm = new OpenableDiv("vgm");
-const animations = new OpenableDiv("animations");
-const lofi = new OpenableDiv("lofi");
-const ambient = new OpenableDiv("ambient");
-const piano = new OpenableDiv("piano");
-const electronic = new OpenableDiv("electronic");
-const experimental = new OpenableDiv("experimental");
-const trap = new OpenableDiv("trap");
-const shortFilms = new OpenableDiv("short-films");
-const jazz = new OpenableDiv("jazz");
+if (document.querySelector('title').innerHTML === 'Eric Holzer - Music') {
+	const vgm = new OpenableDiv("vgm");
+	const animations = new OpenableDiv("animations");
+	const lofi = new OpenableDiv("lofi");
+	const ambient = new OpenableDiv("ambient");
+	const piano = new OpenableDiv("piano");
+	const electronic = new OpenableDiv("electronic");
+	const experimental = new OpenableDiv("experimental");
+	const trap = new OpenableDiv("trap");
+	const shortFilms = new OpenableDiv("short-films");
+	const jazz = new OpenableDiv("jazz");
+}
+
+if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
+	const libft = new OpenableDiv("libft");
+	const push_swap = new OpenableDiv("push_swap");
+	const FdF = new OpenableDiv("FdF");
+	const minishell = new OpenableDiv("minishell");
+	const miniRT = new OpenableDiv("miniRT");
+	const wireframe = new OpenableDiv("wireframe");
+	const kizuna = new OpenableDiv("kizuna");
+	const vec2 = new OpenableDiv("vec2");
+	const portfolio = new OpenableDiv("portfolio");
+}
