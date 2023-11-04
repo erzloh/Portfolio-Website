@@ -348,3 +348,7 @@ h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.website-iframe {
+	border: black 1px solid;
+}

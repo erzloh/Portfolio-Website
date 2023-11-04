@@ -86,4 +86,5 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const kizuna = new OpenableDiv("kizuna");
 	const vec2 = new OpenableDiv("vec2");
 	const portfolio = new OpenableDiv("portfolio");
+	const meteo = new OpenableDiv("meteo");
 }
