@@ -120,10 +120,12 @@ ul {
 }
 
 footer {
-	padding: 10px;
+	/* padding: 10px; */
+	/* margin-top: 48px; */
 	color: #777;
 	font-size: 14px;
 	text-align: center;
+	animation: fadein 1s ease-in-out;
 }
 
 #bio {
@@ -147,16 +149,15 @@ a {
     text-decoration: none; /* This removes the underline */
 }
 
-/* Remove color for hover state */
-a:hover {
-    color: inherit;
-	text-decoration: underline;
-}
-
-/* Remove color for visited state */
 a:visited {
     color: inherit;
 }
+
+a:hover {
+    color: var(--quaternary-color);
+	text-decoration: underline;
+}
+
 
 .navbar {
 	background-color: var(--tertiary-color);
@@ -361,6 +362,10 @@ h2, h3, h4, h5, h6 {
 	animation: fadein 1s;
 }
 
+.genre {
+	/* display: inline-block; */
+}
+
 .genre:hover {
 	/* underline */
 	text-decoration: underline;
@@ -392,3 +397,10 @@ h2, h3, h4, h5, h6 {
 	border: black 1px solid;
 }
 
+i, .icon {
+	margin-right: 10px;
+}
+
+/* .it, .music, .technology {
+	color: var(--secondary-color);
+} */
