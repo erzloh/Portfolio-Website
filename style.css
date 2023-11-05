@@ -57,7 +57,7 @@ body {
 }
 
 #top-div {
-	height: calc(100vh - 20vh);
+	height: calc(100vh - 25vh);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -240,7 +240,7 @@ a:hover {
 }
 
 #eric-home-page, #it-student, #music-creator {
-	animation: fall 2s ease-in-out;
+	animation: fall 2.5s ease-in-out;
 }
 
 @keyframes fall {
