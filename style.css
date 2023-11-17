@@ -240,7 +240,7 @@ a:hover {
 }
 
 #eric-home-page, #it-student, #music-creator {
-	animation: fall 2.5s ease-in-out;
+	animation: fall 1.5s ease-in-out;
 }
 
 @keyframes fall {
