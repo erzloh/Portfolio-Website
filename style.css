@@ -87,6 +87,10 @@ ul {
 	transform: scale(1.07) rotate(-3deg);
 }
 
+#eric-home-page, #music-creator, #it-student {
+	text-decoration:underline;
+}
+
 #headline {
 	background-color: var(--tertiary-color);
 	display: inline-block;
