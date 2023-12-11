@@ -82,9 +82,12 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const FdF = new OpenableDiv("FdF");
 	const minishell = new OpenableDiv("minishell");
 	const miniRT = new OpenableDiv("miniRT");
+	const cpp = new OpenableDiv("cpp");
+
 	const wireframe = new OpenableDiv("wireframe");
+	const meteo = new OpenableDiv("meteo");
 	const kizuna = new OpenableDiv("kizuna");
 	const vec2 = new OpenableDiv("vec2");
 	const portfolio = new OpenableDiv("portfolio");
-	const meteo = new OpenableDiv("meteo");
+	const richard = new OpenableDiv("richard");
 }

@@ -153,6 +153,7 @@ footer {
 
 #bio {
 	padding-left: 0;
+	margin: 0;
 }
 
 
@@ -461,3 +462,11 @@ i, .icon {
 } */
 
   
+#things-i-love {
+	transform: scale(1.1) translateY(-2px) translateX(5px);
+
+}
+
+h2 {
+	margin-top: 40px;
+}
