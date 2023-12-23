@@ -77,7 +77,7 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Music') {
 }
 
 if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
-	const libft = new OpenableDiv("libft");
+	// const libft = new OpenableDiv("libft");
 	const push_swap = new OpenableDiv("push_swap");
 	const FdF = new OpenableDiv("FdF");
 	const minishell = new OpenableDiv("minishell");
