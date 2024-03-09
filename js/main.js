@@ -91,3 +91,6 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const portfolio = new OpenableDiv("portfolio");
 	const richard = new OpenableDiv("richard");
 }
+
+// Footer
+document.getElementById('footer--year').textContent = new Date().getFullYear();
