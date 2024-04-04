@@ -87,9 +87,10 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const wireframe = new OpenableDiv("wireframe");
 	const meteo = new OpenableDiv("meteo");
 	const kizuna = new OpenableDiv("kizuna");
-	const vec2 = new OpenableDiv("vec2");
+	// const vec2 = new OpenableDiv("vec2");
 	const portfolio = new OpenableDiv("portfolio");
 	const richard = new OpenableDiv("richard");
+	const mindfulInstagram = new OpenableDiv("mindful");
 }
 
 // Footer

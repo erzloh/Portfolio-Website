@@ -470,3 +470,23 @@ i, .icon {
 h2 {
 	margin-top: 40px;
 }
+
+.tech-icon {
+	width: 42px;
+	height: 42px;
+	object-fit: contain;
+}
+
+.tech-icon:hover {
+	transform: scale(1.1);
+}
+
+.tech-link:hover {
+	text-decoration: none;
+}
+
+.project-tech-icon {
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
