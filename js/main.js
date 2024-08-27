@@ -77,14 +77,13 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Music') {
 }
 
 if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
-	// const libft = new OpenableDiv("libft");
-	const push_swap = new OpenableDiv("push_swap");
 	const FdF = new OpenableDiv("FdF");
 	const minishell = new OpenableDiv("minishell");
 	const miniRT = new OpenableDiv("miniRT");
-	const cpp = new OpenableDiv("cpp");
+	const webserv = new OpenableDiv("webserv");
 
 	const wireframe = new OpenableDiv("wireframe");
+	const myChatGPT = new OpenableDiv("myChatGPT");
 	const meteo = new OpenableDiv("meteo");
 	const kizuna = new OpenableDiv("kizuna");
 	// const vec2 = new OpenableDiv("vec2");
