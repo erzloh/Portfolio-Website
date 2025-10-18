@@ -9,15 +9,15 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css?v=1.0.1">
-		<script src="js/main.js?v=1.0.1" defer></script>
+		<script src="js/main.js?v=1.0.3" defer></script>
 	</head>
 	<body>
 		<nav class="navbar">
 			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="project.html" class="current-page">Programming</a></li>
-				<li><a href="music.html">Music</a></li>
-				<li><a href="about.html">About</a></li>
+				<li><a href="index.html" class="navbar-eric">Home</a></li>
+				<li><a href="project.html" class="it">Programming</a></li>
+				<li><a href="music.html" class="navbar-music">Music</a></li>
+				<li><a href="about.html" class="navbar-eric">About</a></li>
 			</ul>
 			<!-- <i class="fa-solid fa-bars burger-menu" style="color: #000000;"></i> -->
 			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
@@ -151,12 +151,29 @@
 					<i class="fab fa-gitlab"></i><a href="https://gitlab.com/sacha.ds2002/webserv" target="_blank">project page</a>
 					<p></p>
 				</div>
+				<h3 id="transcendence" class="project-name">→ ft_transcendence<img src="images/javascript_icon.png" class="project-tech-icon" alt="JavaScript Icon" title="JavaScript Icon"><img src="images/css_icon.png" class="project-tech-icon" alt="CSS Icon" title="CSS Icon"><img src="images/html_icon.png" class="project-tech-icon" alt="HTML Icon" title="HTML Icon"><img src="images/sass_icon.png" class="project-tech-icon" alt="Sass Icon" title="Sass Icon"><img src="images/bootstrap_icon.png" class="project-tech-icon" alt="Bootstrap Icon" title="Bootstrap Icon"><img src="images/docker_icon.webp" class="project-tech-icon" alt="Docker Icon" title="Docker Icon"><img src="images/nginx_icon.png" class="project-tech-icon" alt="Nginx Icon" title="Nginx Icon"></h3>
+				<div id="transcendence-div" class="project-div">
+					<p>ft_transcendence is my final project of 42 Lausanne, made with a team of 5 developers in total.</p>
+					<p>It is an arcade-like website, we called satori, that brings together a Pong game, a 2-player Pac-Man game, and a variety of additional features such as 3D graphics, an AI opponent, user authentication and game statistics.</p>
+					<p>Particular emphasis was placed on delivering a high-quality user experience through a modern-looking polished aesthetic, prioritizing accessibility, multi-language support, and a fully responsive interface.</p>
+					<i class="fab fa-github"></i><a href="https://github.com/erzloh/ft_transcendence" target="_blank">project page</a>
+					<p></p>
+					<img class="project-screenshot" src="projects/satori_home.gif" alt="gif of the home page">
+					<img class="project-screenshot" src="projects/satori_pong_2d.gif" alt="gif of the 2d pong game">
+					<img class="project-screenshot" src="projects/satori_pong_3d.gif" alt="gif of the 3d pong game">
+					<img class="project-screenshot" src="projects/satori_pacman.gif" alt="gif of the pacman game">
+					<img class="project-screenshot" src="projects/satori_login.png" alt="image of the login page">
+					<img class="project-screenshot" src="projects/satori_profile.png" alt="image of the profile page">
+					<img class="project-screenshot" src="projects/satori_stats.png" alt="image of the stats page">
+				</div>
+
+
 			</div>
 			<hr>
 		</div>
 		
 		<footer>
-			&copy; <span id="footer--year"></span> Eric Holzer. Made with love :D
+			&copy; <span id="footer--year"></span> Eric Holzer. Made with ♡
     	</footer>
 	</body>
 </html>

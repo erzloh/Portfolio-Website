@@ -4,19 +4,21 @@
 }
 
 :root {
-	--primary-color: #f0e7db;
+	--primary-color: #ffffff;
 	--secondary-color: #343434;
-	--tertiary-color: #f5f0e8;
+	--tertiary-color: #f3f3f3;
 	--quaternary-color: #e78718;
 	--quinary-color: #fff;
 
 	--old-secondary-color: rgba(223, 188, 153, 0.9);
-	--old-header-color: rgb(255, 237, 220);
+	--old-header-color: rgb(151, 115, 82);
 	--old-header-hover-color: rgb(252, 212, 175);
 	--old-nav-hover-color: rgb(112, 75, 38);
 	--old-mobile-nav-color: rgba(205, 134, 63, 0.6);
 	--eric-color: peru;
-
+	--it-color: darkcyan;
+	--music-color: blueviolet;
+	--technology-color: brown;
 }
 
 @font-face {
@@ -83,6 +85,14 @@ ul {
 	transition: 0.3s;
 }
 
+.nav-list li .eric {
+	color: var(--quaternary-color);
+}
+
+.navbar-eric:hover {
+	color: var(--quaternary-color);
+}
+
 #eric-home-page:hover {
 	transform: scale(1.07) rotate(-3deg);
 }
@@ -119,19 +129,36 @@ ul {
 }
 
 .it {
-	color:darkcyan;
+	color: var(--it-color) !important;
 	transition: 0.3s;
 	display: inline-block;
 }
+
+.nav-list li .it {
+	color: var(--it-color);
+}
+
+.navbar-it:hover {
+	color: var(--it-color);
+}
+
 
 #it-student:hover {
 	transform: scale(1.07) rotate(-3deg);
 }
 
 .music {
-	color:blueviolet;
+	color: var(--music-color) !important;
 	display: inline-block;
 	transition: 0.3s;
+}
+
+.nav-list li .music {
+	color: var(--music-color);
+}
+
+.navbar-music:hover {
+	color: var(--music-color);
 }
 
 #music-creator:hover {
@@ -139,7 +166,7 @@ ul {
 }
 
 .technology {
-	color:brown;
+	color: var(--technology-color);
 }
 
 footer {
@@ -205,19 +232,19 @@ a:hover {
 }
 
 .nav-list li {
-	display: inline; /* リストアイテムを水平に配置 */
-	margin-right: 20px; /* リストアイテムの右側にマージンを追加 */
+	display: inline;
+	margin-right: 20px;
 }
 
 .nav-list li a {
-	text-decoration: none; /* リンクの下線を削除 */
+	text-decoration: none;
 	color: var(--secondary-color);
 	transition: 0.2s;;
 }
 
-.nav-list li a:hover {
+/* .nav-list li a:hover {
 	color: var(--quaternary-color)
-}
+} */
 
 .navbar .burger-menu {
 	position: absolute;
@@ -391,9 +418,9 @@ h2, h3, h4, h5, h6 {
 	text-decoration: underline;
 }
 
-.nav-list li .current-page {
+/* .nav-list li .current-page {
     color: var(--quaternary-color);
-}
+} */
 
 .insta {
 	display: flex;
@@ -464,7 +491,9 @@ i, .icon {
   
 #things-i-love {
 	transform: scale(1.1) translateY(-2px) translateX(5px);
-
+	transform-origin: center;
+	transition: 0.3s;
+	color: var(--quaternary-color);
 }
 
 h2 {
@@ -489,4 +518,69 @@ h2 {
 	width: 25px;
 	height: 25px;
 	object-fit: contain;
+}
+
+/* Hero Section Styles */
+#hero-section {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+#hero-text {
+	flex: 1;
+}
+
+#hero-name {
+	font-size: 4rem;
+	font-weight: bold;
+	color: var(--secondary-color);
+	margin: 0 0 15px -5px;
+	line-height: 1.1;
+}
+
+#hero-subtitle {
+	font-size: 1.4rem;
+	color: var(--quaternary-color);
+	margin: 0;
+	font-weight: 500;
+}
+
+#hero-image {
+	flex: 0 0 auto;
+}
+
+#hero-profile-pic {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	object-fit: cover;
+	/* border: 1px solid var(--secondary-color); */
+	/* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
+}
+
+/* Mobile Hero Section */
+@media (max-width: 768px) {
+	#hero-section {
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	#hero-name {
+		font-size: 3rem;
+		margin: 0 0 15px 0;		
+	}
+
+	#hero-subtitle {
+		font-size: 1.2rem;
+	}
+
+	#hero-profile-pic {
+		width: 160px;
+		height: 160px;
+	}
 }

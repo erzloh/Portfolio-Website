@@ -65,6 +65,7 @@ function OpenableDiv(titleTag) {
 
 if (document.querySelector('title').innerHTML === 'Eric Holzer - Music') {
 	const vgm = new OpenableDiv("vgm");
+	const branding = new OpenableDiv("branding");
 	const animations = new OpenableDiv("animations");
 	const lofi = new OpenableDiv("lofi");
 	const ambient = new OpenableDiv("ambient");
@@ -81,6 +82,7 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const minishell = new OpenableDiv("minishell");
 	const miniRT = new OpenableDiv("miniRT");
 	const webserv = new OpenableDiv("webserv");
+	const transcendence = new OpenableDiv("transcendence");
 
 	const wireframe = new OpenableDiv("wireframe");
 	const myChatGPT = new OpenableDiv("myChatGPT");

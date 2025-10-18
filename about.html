@@ -9,27 +9,53 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css?v=1.0.1">
-		<script src="js/main.js?v=1.0.1" defer></script>
+		<script src="js/main.js?v=1.0.3" defer></script>
 	</head>
 	<body>
 		<nav class="navbar">
 			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="project.html">Programming</a></li>
-				<li><a href="music.html">Music</a></li>
-				<li><a href="about.html" class="current-page">About</a></li>
+				<li><a href="index.html" class="navbar-eric">Home</a></li>
+				<li><a href="project.html" class="navbar-it">Programming</a></li>
+				<li><a href="music.html" class="navbar-music">Music</a></li>
+				<li><a href="about.html" class="eric">About</a></li>
 			</ul>
 			<img class="burger-menu" src="images/burger_menu_icon.png" alt="burger menu">
 		</nav>
 		<div id="core-content">
+			<div id="hero-section">
+				<div id="hero-text">
+					<h1 id="hero-name">Eric Holzer</h1>
+					<p id="hero-subtitle">Web Developer and Designer</p>
+				</div>
+				<div id="hero-image">
+					<img class="profile-svg" id="hero-profile-pic" src="images/Minimalist Profile Picture.jpeg" alt="Eric Holzer profile picture">
+				</div>
+			</div>
 			<h2>About me</h2>
 			<div id="about-me">
-				<p>My name is <span class="eric">Eric Holzer</span> aka <span class="eric">erzloh</span>, I'm 22 and I'm Swiss-Japanese.<br></p>
-				<p>I'm an <span class="it">IT Student</span> at <span class="it"><a href="https://42.fr/en/homepage/" target="_blank" style="text-decoration: none; color: inherit">Ecole 42</a></span>, where I mainly program in <span class="technology">C</span> and <span class="technology">C++</span>.<br></p>
-				<p>I'm a front-end web developer and use <span class="technology">HTML</span>, <span class="technology">CSS</span>, <span class="technology">JavaScript</span>, <span class="technology">React</span>, <span class="technology">Wordpress</span>, and <span class="technology">Figma</span>.</p>
-				<p>I've always loved making <span class="it"><a href="https://erzloh.itch.io/" target="_blank" style="text-decoration: none; color: inherit">games</a></span>, and I worked at 20% for 6 months as an intern at <span class="it"><a href="https://www.naravengames.com/" target="_blank" style="text-decoration: none; color: inherit"">Naraven Games</a></span>, using <span class="technology">Unreal Engine 5</span>.<br></p>
-				<p>I'm also a <span class="music">Music Composer</span> and enjoy everything audio-related, I make music for projects such as games, animations, or my own lo-fi albums.<br></p>
-				<p>I love to learn languages, I speak fluently french and english and have an intermediate level in japanese and german.</p>
+				<p>
+					I'm <strong><span class="eric">Eric Holzer</span></strong>, also known as <strong><span class="eric">erzloh</span></strong>. I'm a 23-year-old Swiss-Japanese <span class="it">Fullstack Web Developer</span> passionate about beautiful and intentional design both technically and visually.
+				</p>
+
+				<p>
+					I'm studying <a href="project.html" class="it" style="text-decoration: underline;">Computer Science</a> at <a href="https://42.fr/" target="_blank" style="text-decoration: underline;">École 42</a>, where I've learned among others, C, C++, web technologies, networking, DevOps etc, along with teamwork, communication, and problem-solving skills.
+				</p>
+
+				<p>
+					Alongside coding, I'm a <a href="music.html" class="music" style="text-decoration: underline;">Music Composer</a>. I've written original pieces for brands, animations, games, etc, as well as personal projects like piano works and lo-fi albums.
+				</p>
+
+				<p>
+					Furthermore, I'm passionate about languages. I'm a native French speaker, fluent in English, and continuously and earnestly improving my Japanese. I'm somewhat alright in German, though I'd definitely love to take some time to brush it up!
+				</p>
+
+				<p>
+					I also run a <a href="https://www.youtube.com/erzloh" target="_blank" style="text-decoration: underline;">YouTube channel</a> and an <a href="https://www.instagram.com/eric.hzer/" target="_blank" style="text-decoration: underline;">Instagram account</a> where I share things I'm interested in and where I document my learning journey.
+				</p>
+
+				<p>
+					At the heart of my work and life lie minimalism, beauty, and intentionality.
+				</p>
 			</div>
 			<h2>Technical skills</h2>
 			<div class="skills">
@@ -42,14 +68,38 @@
 				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="JavaScript" class="tech-link">
 					<img src="images/javascript_icon.png" alt="JavaScript icon" class="tech-icon">
 				</a>
+				<a href="https://www.typescriptlang.org/" target="_blank" title="Typescript" class="tech-link">
+					<img src="images/typescript_icon.png" alt="Typescript icon" class="tech-icon">
+				</a>
 				<a href="https://getbootstrap.com/" target="_blank" title="Bootstrap" class="tech-link">
 					<img src="images/bootstrap_icon.png" alt="Bootstrap icon" class="tech-icon">
+				</a>
+				<a href="https://sass-lang.com/" target="_blank" title="Sass" class="tech-link">
+					<img src="images/sass_icon.png" alt="Sass icon" class="tech-icon">
+				</a>
+				<a href="https://mui.com/" target="_blank" title="MUI" class="tech-link">
+					<img src="images/mui_icon.png" alt="MUI icon" class="tech-icon">
 				</a>
 				<a href="https://reactjs.org/" target="_blank" title="React" class="tech-link">
 					<img src="images/react_icon.png" alt="React icon" class="tech-icon">
 				</a>
+				<a href="https://reactnative.dev/" target="_blank" title="React Native" class="tech-link">
+					<img src="images/ReactNative_icon.png" alt="React Native icon" class="tech-icon">
+				</a>
 				<a href="https://nodejs.org/en/" target="_blank" title="Node.js" class="tech-link">
-					<img src="images/nodejs_icon.png" alt="Node.js icon" class="tech-icon">
+					<img src="images/nodejs2_icon.png" alt="Node.js icon" class="tech-icon">
+				</a>
+				<a href="https://nestjs.com/" target="_blank" title="NestJS" class="tech-link">
+					<img src="images/nestjs_icon.png" alt="NestJS icon" class="tech-icon">
+				</a>
+				<a href="https://www.mongodb.com/" target="_blank" title="MongoDB" class="tech-link">
+					<img src="images/mongodb_icon.png" alt="MongoDB icon" class="tech-icon">
+				</a>
+				<a href="https://www.prisma.io/" target="_blank" title="Prisma" class="tech-link">
+					<img src="images/prisma_icon.png" alt="Prisma icon" class="tech-icon">
+				</a>
+				<a href="https://jestjs.io/" target="_blank" title="Jest" class="tech-link">
+					<img src="images/jest_icon.png" alt="Jest icon" class="tech-icon">
 				</a>
 				<a href="https://wordpress.org/" target="_blank" title="Wordpress" class="tech-link">
 					<img src="images/wordpress_icon.png" alt="Wordpress icon" class="tech-icon">
@@ -66,19 +116,27 @@
 				<a href="https://www.unrealengine.com/" target="_blank" title="Unreal Engine 5" class="tech-link">
 					<img src="images/unreal_engine_icon.png" alt="Unreal Engine 5 icon" class="tech-icon">
 				</a>
+				<a href="https://www.python.org/" target="_blank" title="Python" class="tech-link">
+					<img src="images/python_icon.png" alt="Python icon" class="tech-icon">
+				</a>
 				<a href="https://www.docker.com/" target="_blank" title="Docker" class="tech-link">
 					<img src="images/docker_icon.webp" alt="Docker icon" class="tech-icon">
+				</a>
+				<a href="https://kubernetes.io/" target="_blank" title="Kubernetes" class="tech-link">
+					<img src="images/kubernetes_icon.png" alt="Kubernetes icon" class="tech-icon">
 				</a>
 			</div>
 			<h2>Bio</h2>
 			<ul id="bio">
-				<li><span class="year">2002</span>Born in Lausanne, Switzerland</li>
-				<li><span class="year">2021</span>Started a Sound Arts PreCollege year at the University of the Arts Bern</li>
-				<li><span class="year">2022</span>Started my studies at Ecole 42, in Lausanne</li>
-				<li style="margin-bottom: 0px;"><span class="year">2023</span>Started a 6 months 20% internship at NaravenGames, as an Unreal Engine developer</li>
+				<li><span class="year">2002</span><span>Born in Lausanne, Switzerland</span></li>
+				<li><span class="year">2022</span><span>Undertook a Sound Arts PreCollege year at the University of the Arts Bern</span></li>
+				<li><span class="year">2022</span><span>Began studying Computer Science at Ecole 42, in Lausanne</span></li>
+				<li><span class="year">2023</span><span>Started a 6-months internship at <a href="https://www.naravengames.com/" target="_blank" style="text-decoration: underline;">NaravenGames</a>, as an Unreal Engine developer (20% part-time)</span></li>
+				<li><span class="year">2024</span><span>Started a 7-months internship at <a href="https://www.audemarspiguet.com/" target="_blank" style="text-decoration: underline;">Audemars Piguet</a>, as a Full-Stack Web & Mobile Developer (full-time)</span></li>
+				<li style="margin-bottom: 0px;"><span class="year">2025</span><span>Transferred to 42Tokyo, pursuing advanced Computer Science studies</span></li>
 			</ul>
 			<h2 style="display: inline-block">Things I</h2><i id="things-i-love" class="fa-solid fa-heart" style="margin-left: 10px;"></i>
-			<p style="margin: 0px;">making music, basket, graphic design, learning japanese, cooking, playing the piano, the aesthetic of things, and a lot more!...</p>
+			<p style="margin: 0px;">making music, programming, swimming, cycling, bouldering, graphic design, learning japanese, cooking, playing the piano, filmmaking, traveling, minimalism, photography, and a lot more!...</p>
 			<h2>Links</h2>
 			<div class="links">
 				<ul >
@@ -100,7 +158,7 @@
 			<hr>
 		</div>
 		<footer>
-      		&copy; <span id="footer--year"></span> Eric Holzer. Made with love :D
+      		&copy; <span id="footer--year"></span> Eric Holzer. Made with ♡
     	</footer>
 	</body>
 </html>
