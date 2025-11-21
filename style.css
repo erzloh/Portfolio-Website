@@ -50,6 +50,12 @@ body {
 	margin-top: 80px;
 }
 
+#svg-filters {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
 #home-title {
 	display: block;
 	text-align: center;
@@ -583,4 +589,26 @@ h2 {
 		width: 160px;
 		height: 160px;
 	}
+}
+
+@keyframes squiggly-anim {
+  0% {
+    filter: url('#squiggly-0');
+  }
+  25% {
+    filter: url('#squiggly-1');
+  }
+  50% {
+    filter: url('#squiggly-2');
+  }
+  75% {
+    filter: url('#squiggly-3');
+  }
+  100% {
+    filter: url('#squiggly-4');
+  }
+}
+
+.squiggly {
+  animation: squiggly-anim 1s linear infinite;
 }
