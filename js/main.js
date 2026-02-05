@@ -92,6 +92,7 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 	const portfolio = new OpenableDiv("portfolio");
 	const richard = new OpenableDiv("richard");
 	const mindfulInstagram = new OpenableDiv("mindful");
+	const instagramNewsBot = new OpenableDiv("instagram-news-bot");
 }
 
 // Footer
