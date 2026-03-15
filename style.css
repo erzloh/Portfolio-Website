@@ -407,6 +407,12 @@ hr {
 	text-align: center;
 }
 
+.module-label {
+	font-size: 0.95em;
+	font-weight: 600;
+	margin: 16px 0 8px;
+}
+
 video {
 	max-width: 100%;
 	height: auto;
@@ -466,6 +472,14 @@ h2, h3, h4, h5, h6 {
 	height: auto;
 	border: black 1px solid;
 	border-radius: 10px;
+}
+
+.mobile-screenshot {
+	width: 260px;
+	max-width: 100%;
+	display: inline-block;
+	margin-right: 16px;
+	margin-bottom: 16px;
 }
 
 .project-div a {
