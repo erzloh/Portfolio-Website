@@ -665,21 +665,31 @@ h2 {
 	display: block;
 }
 
-/* Comic-style speech bubble (used on the mountain photo, inside the image over the sky) */
+/* Comic-style speech bubble (used on the mountain photo, over the sky just above Eric's hat).
+   Two layers: .bubble-shape (outline, fill, shadow, tail) gets the squiggle filter,
+   .bubble-text sits on top and stays sharp. */
 .speech-bubble {
-	top: 24px;
+	top: auto;
+	bottom: 70%; /* bubble sits a little above the hat (~35% down the photo) */
 	padding: 10px 16px;
-	border: 2px solid var(--secondary-color);
-	border-radius: 20px;
-	background: var(--primary-color);
+	background: none;
 	color: var(--secondary-color);
 	font-size: 0.85rem;
 	font-weight: 600;
+}
+
+.bubble-shape {
+	position: absolute;
+	inset: 0;
+	border: 2px solid var(--secondary-color);
+	border-radius: 20px;
+	background: var(--primary-color);
 	box-shadow: 3px 3px 0 var(--secondary-color);
+	animation: squiggly-anim 1s linear infinite;
 }
 
 /* the tail: a rotated square showing only its outlined bottom-right corner */
-.speech-bubble::after {
+.bubble-shape::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -690,6 +700,17 @@ h2 {
 	border-right: 2px solid var(--secondary-color);
 	border-bottom: 2px solid var(--secondary-color);
 	transform: translateX(-50%) rotate(45deg);
+}
+
+.bubble-text {
+	position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bubble-shape {
+		animation: none;
+		filter: url('#squiggly-0');
+	}
 }
 
 /* plain text, no links: let the mouse pass through to the photo */
