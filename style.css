@@ -434,13 +434,35 @@ h2, h3, h4, h5, h6 {
     color: var(--quaternary-color);
 } */
 
-.insta {
+.about-photo {
 	display: flex;
 	justify-content: center;
 }
 
-.instagram-media {
-	border-radius: 10px !important;
+.about-photo img {
+	width: 100%;
+	max-width: 540px;
+	height: auto;
+	/* wobbly hand-drawn edges: the photo stays sharp, only its outline moves */
+	-webkit-mask-image: url('images/photo_mask_0.svg');
+	mask-image: url('images/photo_mask_0.svg');
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+	animation: photo-squiggle 1s step-end infinite;
+}
+
+@keyframes photo-squiggle {
+	0%   { -webkit-mask-image: url('images/photo_mask_0.svg'); mask-image: url('images/photo_mask_0.svg'); }
+	20%  { -webkit-mask-image: url('images/photo_mask_1.svg'); mask-image: url('images/photo_mask_1.svg'); }
+	40%  { -webkit-mask-image: url('images/photo_mask_2.svg'); mask-image: url('images/photo_mask_2.svg'); }
+	60%  { -webkit-mask-image: url('images/photo_mask_3.svg'); mask-image: url('images/photo_mask_3.svg'); }
+	80%  { -webkit-mask-image: url('images/photo_mask_4.svg'); mask-image: url('images/photo_mask_4.svg'); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.about-photo img {
+		animation: none;
+	}
 }
 
 @keyframes fadein {
@@ -570,6 +592,109 @@ h2 {
 
 #hero-image {
 	flex: 0 0 auto;
+}
+
+/* Instant tooltips (the native title tooltip has a fixed ~1s delay).
+   - data-tooltip="..." for plain text
+   - .has-tooltip + a child .tooltip when the tooltip needs links (it stays open while hovered) */
+[data-tooltip],
+.has-tooltip {
+	position: relative;
+}
+
+[data-tooltip]::after,
+.tooltip {
+	position: absolute;
+	left: 50%;
+	top: calc(100% + 10px);
+	transform: translate(-50%, -4px);
+	width: max-content;
+	max-width: min(320px, 90vw);
+	padding: 6px 10px;
+	border-radius: 6px;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	font-size: 0.8rem;
+	text-align: center;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.15s ease, transform 0.15s ease;
+	z-index: 10;
+}
+
+[data-tooltip]::after {
+	content: attr(data-tooltip);
+}
+
+[data-tooltip]:hover::after,
+.has-tooltip:hover .tooltip,
+.has-tooltip:focus-within .tooltip {
+	opacity: 1;
+	transform: translate(-50%, 0);
+}
+
+/* only tooltips with links take the mouse; plain ones stay click-through
+   so they never block the icon or element underneath */
+.has-tooltip:hover .tooltip,
+.has-tooltip:focus-within .tooltip {
+	pointer-events: auto;
+}
+
+.tech-link[data-tooltip]::after {
+	top: calc(100% + 4px);
+}
+
+.tooltip a {
+	color: var(--quaternary-color);
+	text-decoration: underline;
+}
+
+/* the profile pic is inline, so its box already has ~7px of space below the image;
+   overlapping it also means there's no gap to cross when moving the mouse into the tooltip */
+#hero-image .tooltip {
+	top: calc(100% - 16px);
+}
+
+/* wraps the photo tightly so the tooltip only shows when hovering the photo itself */
+.about-photo .photo-wrap {
+	width: 100%;
+	max-width: 540px;
+}
+
+.about-photo .photo-wrap img {
+	display: block;
+}
+
+/* Comic-style speech bubble (used on the mountain photo, inside the image over the sky) */
+.speech-bubble {
+	top: 24px;
+	padding: 10px 16px;
+	border: 2px solid var(--secondary-color);
+	border-radius: 20px;
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	font-size: 0.85rem;
+	font-weight: 600;
+	box-shadow: 3px 3px 0 var(--secondary-color);
+}
+
+/* the tail: a rotated square showing only its outlined bottom-right corner */
+.speech-bubble::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -9px;
+	width: 14px;
+	height: 14px;
+	background: var(--primary-color);
+	border-right: 2px solid var(--secondary-color);
+	border-bottom: 2px solid var(--secondary-color);
+	transform: translateX(-50%) rotate(45deg);
+}
+
+/* plain text, no links: let the mouse pass through to the photo */
+.has-tooltip:hover .speech-bubble {
+	pointer-events: none;
 }
 
 #hero-profile-pic {
