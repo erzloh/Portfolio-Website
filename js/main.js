@@ -99,3 +99,13 @@ if (document.querySelector('title').innerHTML === 'Eric Holzer - Projects') {
 
 // Footer
 document.getElementById('footer--year').textContent = new Date().getFullYear();
+
+// Age, computed from birthday (28 July 2002) so it updates on its own
+const ageElement = document.getElementById('age');
+if (ageElement) {
+	const today = new Date();
+	let age = today.getFullYear() - 2002;
+	const hadBirthdayThisYear = today.getMonth() > 6 || (today.getMonth() === 6 && today.getDate() >= 28); // months are 0-indexed: 6 = July
+	if (!hadBirthdayThisYear) age--;
+	ageElement.textContent = age;
+}
